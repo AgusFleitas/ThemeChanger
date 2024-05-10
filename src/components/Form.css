@@ -1,0 +1,54 @@
+.container {
+  width: 400px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #333;
+  color: #fff;
+  border-radius: 16px;
+  padding: 24px 32px;
+}
+
+strong {
+  text-align: center;
+  font-family: "Roboto";
+  font-size: 20px;
+}
+
+.inputs-container > div {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+div > input {
+  padding: 8px;
+  border-radius: 8px;
+  border: none;
+  margin-bottom: 16px;
+}
+
+select {
+  width: 45%;
+  padding: 8px;
+  border-radius: 8px;
+  border: none;
+}
+
+.container > button {
+  width: 45%;
+  align-self: center;
+  padding: 8px;
+  border: none;
+  background-color: #fff;
+  border-radius: 8px;
+  font-weight: 700;
+  margin-top: 8px;
+}
+
+.container > button:hover {
+  cursor: pointer;
+  background-color: #000;
+  color: #fff;
+}
