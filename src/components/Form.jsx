@@ -1,8 +1,18 @@
+import { useContext } from "react";
 import "./Form.css";
+import { ThemeContext } from "../context/themes";
 
 const Form = () => {
+  const { themes } = useContext(ThemeContext);
+
+  const handleTheme = () => {
+    const activeTheme = themes.find((theme) => theme.active === true);
+
+    return `${activeTheme.name}-container`;
+  };
+
   return (
-    <div className='container'>
+    <div className={handleTheme()}>
       <strong>Formulario</strong>
       <div className='inputs-container'>
         <div className='field-container'>
@@ -26,7 +36,7 @@ const Form = () => {
           </select>
         </div>
       </div>
-      <button>Enviar</button>
+      <button className='form-button'>Enviar</button>
     </div>
   );
 };

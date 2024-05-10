@@ -1,4 +1,4 @@
-.container {
+.dark-container {
   width: 400px;
   height: 400px;
   display: flex;
@@ -36,7 +36,7 @@ select {
   border: none;
 }
 
-.container > button {
+.form-button {
   width: 45%;
   align-self: center;
   padding: 8px;
@@ -47,8 +47,44 @@ select {
   margin-top: 8px;
 }
 
-.container > button:hover {
+.form-button:hover {
   cursor: pointer;
   background-color: #000;
   color: #fff;
+}
+
+.light-container {
+  width: 400px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #b8b8b8;
+  color: #fff;
+  border-radius: 16px;
+  padding: 24px 32px;
+}
+
+.blue-container {
+  width: 400px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #003087;
+  color: #fff;
+  border-radius: 16px;
+  padding: 24px 32px;
+}
+
+.purple-container {
+  width: 400px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #6441A5;
+  color: #fff;
+  border-radius: 16px;
+  padding: 24px 32px;
 }
